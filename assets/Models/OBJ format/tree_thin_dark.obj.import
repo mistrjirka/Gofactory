@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://fpf7je4wicor"
+path="res://.godot/imported/tree_thin_dark.obj-8502008b9e4b305e39a7c9c889b394f0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree_thin_dark.obj-8502008b9e4b305e39a7c9c889b394f0.mesh"]
+
+source_file="res://assets/Models/OBJ format/tree_thin_dark.obj"
+dest_files=["res://.godot/imported/tree_thin_dark.obj-8502008b9e4b305e39a7c9c889b394f0.mesh", "res://.godot/imported/tree_thin_dark.obj-8502008b9e4b305e39a7c9c889b394f0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

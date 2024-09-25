@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dbgwjxnyhc05i"
+path="res://.godot/imported/stump_round.obj-7ce9dd04be235f7f07cf9bb7546f8add.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stump_round.obj-7ce9dd04be235f7f07cf9bb7546f8add.mesh"]
+
+source_file="res://assets/Models/OBJ format/stump_round.obj"
+dest_files=["res://.godot/imported/stump_round.obj-7ce9dd04be235f7f07cf9bb7546f8add.mesh", "res://.godot/imported/stump_round.obj-7ce9dd04be235f7f07cf9bb7546f8add.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

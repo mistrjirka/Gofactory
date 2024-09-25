@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c6jhygxhrn50a"
+path="res://.godot/imported/ground_pathBendBank.obj-dea9f7439f8c3955d7bc4551c54475cb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ground_pathBendBank.obj-dea9f7439f8c3955d7bc4551c54475cb.mesh"]
+
+source_file="res://assets/Models/OBJ format/ground_pathBendBank.obj"
+dest_files=["res://.godot/imported/ground_pathBendBank.obj-dea9f7439f8c3955d7bc4551c54475cb.mesh", "res://.godot/imported/ground_pathBendBank.obj-dea9f7439f8c3955d7bc4551c54475cb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

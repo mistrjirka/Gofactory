@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dpj6dmxwu0wmu"
+path="res://.godot/imported/plant_bushLargeTriangle.obj-e2d8d3e3543a5f63331aed8e69fdc00d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/plant_bushLargeTriangle.obj-e2d8d3e3543a5f63331aed8e69fdc00d.mesh"]
+
+source_file="res://assets/Models/OBJ format/plant_bushLargeTriangle.obj"
+dest_files=["res://.godot/imported/plant_bushLargeTriangle.obj-e2d8d3e3543a5f63331aed8e69fdc00d.mesh", "res://.godot/imported/plant_bushLargeTriangle.obj-e2d8d3e3543a5f63331aed8e69fdc00d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

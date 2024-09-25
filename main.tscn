@@ -1,0 +1,95 @@
+[gd_scene load_steps=13 format=3 uid="uid://b5uw55ek2rkpe"]
+
+[ext_resource type="Shader" path="res://shader/water.gdshader" id="1_6s007"]
+[ext_resource type="Shader" path="res://sky.gdshader" id="1_quvpb"]
+[ext_resource type="MeshLibrary" uid="uid://dehov01nrd840" path="res://assets/tiles.tres" id="3_gg1x7"]
+[ext_resource type="Script" path="res://generation.gd" id="4_30647"]
+[ext_resource type="Script" path="res://camera.gd" id="5_n5np5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ea1rm"]
+shader = ExtResource("1_quvpb")
+shader_parameter/offset_horizon = 0.0
+shader_parameter/horizon_intensity = -3.3
+shader_parameter/sun_set = Color(1, 0.8, 1, 1)
+shader_parameter/horizon_color_day = Color(0, 0.862745, 0.396078, 1)
+shader_parameter/horizon_color_night = Color(0.12549, 0.0941176, 0.176471, 1)
+shader_parameter/sun_color = Color(1, 1, 1, 1)
+shader_parameter/sun_radius = 0.5
+shader_parameter/flat_sun = true
+shader_parameter/moon_color = Color(1, 1, 1, 1)
+shader_parameter/moon_radius = 0.15
+shader_parameter/moon_crescent = -0.3
+shader_parameter/dark_falloff = 4.0
+shader_parameter/day_bottom_color = Color(0.286275, 0.705882, 0.976471, 1)
+shader_parameter/day_top_color = Color(0.262745, 0.619608, 0.882353, 1)
+shader_parameter/night_bottom_color = Color(0.0784314, 0.0235294, 0.0901961, 1)
+shader_parameter/night_top_color = Color(0, 0, 0, 1)
+shader_parameter/base_noise_scale = 0.2
+shader_parameter/stars_speed = 0.3
+shader_parameter/stars_cutoff = 0.08
+shader_parameter/stars_sky_color = Color(0, 0.2, 0.1, 1)
+
+[sub_resource type="Sky" id="Sky_dtuh3"]
+sky_material = SubResource("ShaderMaterial_ea1rm")
+
+[sub_resource type="Environment" id="Environment_c6gm1"]
+background_mode = 2
+sky = SubResource("Sky_dtuh3")
+fog_light_color = Color(0.775319, 0.399342, 0.642006, 1)
+fog_light_energy = 2.6
+fog_sun_scatter = 0.08
+fog_density = 0.077
+fog_aerial_perspective = 0.525
+fog_sky_affect = 0.804
+volumetric_fog_density = 1.0
+volumetric_fog_length = 61.25
+volumetric_fog_sky_affect = 0.695
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_njdwr"]
+
+[sub_resource type="Compositor" id="Compositor_q0q8o"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wpav7"]
+render_priority = 0
+shader = ExtResource("1_6s007")
+shader_parameter/WATER_COL = Color(0.04, 0.38, 0.88, 1)
+shader_parameter/WATER2_COL = Color(0.04, 0.35, 0.78, 1)
+shader_parameter/FOAM_COL = Color(0.8125, 0.9609, 0.9648, 1)
+shader_parameter/distortion_speed = 2.0
+shader_parameter/tile = Vector2(1000, 1000)
+shader_parameter/height = 2.0
+shader_parameter/wave_size = Vector2(2, 2)
+shader_parameter/wave_speed = 1.5
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_war6p"]
+material = SubResource("ShaderMaterial_wpav7")
+size = Vector2(1000, 1000)
+subdivide_width = 64
+subdivide_depth = 64
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_c6gm1")
+camera_attributes = SubResource("CameraAttributesPractical_njdwr")
+compositor = SubResource("Compositor_q0q8o")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 0.0865298, 0.996249, 0, -0.996249, 0.0865298, 0, 218.615, -256.349)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="WorldEnvironment"]
+mesh = SubResource("PlaneMesh_war6p")
+skeleton = NodePath("")
+
+[node name="GridMap" type="GridMap" parent="."]
+transform = Transform3D(1.00105, 0, 0, 0, 1.00105, 0, 0, 0, 1.00105, 0, 0, 0)
+mesh_library = ExtResource("3_gg1x7")
+cell_size = Vector3(1, 1, 1)
+data = {
+"cells": PackedInt32Array(65534, 65535, 40, 65534, 65534, 40, 65535, 65534, 40, 65535, 65535, 40, 0, 65535, 40, 0, 65534, 40, 0, 0, 40, 65535, 0, 40, 65534, 0, 40, 131071, 0, 0, 131071, 65534, 0)
+}
+script = ExtResource("4_30647")
+metadata/_editor_floor_ = Vector3(0, 1, 0)
+
+[node name="FreeLookCamera" type="Camera3D" parent="."]
+script = ExtResource("5_n5np5")

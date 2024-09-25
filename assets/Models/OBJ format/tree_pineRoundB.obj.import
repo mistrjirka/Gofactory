@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://u2e4g5qgogs5"
+path="res://.godot/imported/tree_pineRoundB.obj-25eff948e7482be17ff74f724a68a31f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree_pineRoundB.obj-25eff948e7482be17ff74f724a68a31f.mesh"]
+
+source_file="res://assets/Models/OBJ format/tree_pineRoundB.obj"
+dest_files=["res://.godot/imported/tree_pineRoundB.obj-25eff948e7482be17ff74f724a68a31f.mesh", "res://.godot/imported/tree_pineRoundB.obj-25eff948e7482be17ff74f724a68a31f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

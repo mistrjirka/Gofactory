@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://clxbhtawcq2ov"
+path="res://.godot/imported/crop_melon.obj-5fb3eb10ed4b786b3e7ce8bd7b570d18.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crop_melon.obj-5fb3eb10ed4b786b3e7ce8bd7b570d18.mesh"]
+
+source_file="res://assets/Models/OBJ format/crop_melon.obj"
+dest_files=["res://.godot/imported/crop_melon.obj-5fb3eb10ed4b786b3e7ce8bd7b570d18.mesh", "res://.godot/imported/crop_melon.obj-5fb3eb10ed4b786b3e7ce8bd7b570d18.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
