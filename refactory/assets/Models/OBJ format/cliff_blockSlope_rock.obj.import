@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b726haf5a2fuo"
+path="res://.godot/imported/cliff_blockSlope_rock.obj-7260710bd144413588ccfd45b7ccf032.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cliff_blockSlope_rock.obj-7260710bd144413588ccfd45b7ccf032.mesh"]
+
+source_file="res://assets/Models/OBJ format/cliff_blockSlope_rock.obj"
+dest_files=["res://.godot/imported/cliff_blockSlope_rock.obj-7260710bd144413588ccfd45b7ccf032.mesh", "res://.godot/imported/cliff_blockSlope_rock.obj-7260710bd144413588ccfd45b7ccf032.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

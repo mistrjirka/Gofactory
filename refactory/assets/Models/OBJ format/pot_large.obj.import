@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dip4vyf45rand"
+path="res://.godot/imported/pot_large.obj-61d00e18a565d9afc5cda3b8fdd156ef.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pot_large.obj-61d00e18a565d9afc5cda3b8fdd156ef.mesh"]
+
+source_file="res://assets/Models/OBJ format/pot_large.obj"
+dest_files=["res://.godot/imported/pot_large.obj-61d00e18a565d9afc5cda3b8fdd156ef.mesh", "res://.godot/imported/pot_large.obj-61d00e18a565d9afc5cda3b8fdd156ef.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

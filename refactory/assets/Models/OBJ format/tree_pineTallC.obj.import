@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dritc5hqx4omk"
+path="res://.godot/imported/tree_pineTallC.obj-fccfd9851ef473170b4c0e25962feae9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree_pineTallC.obj-fccfd9851ef473170b4c0e25962feae9.mesh"]
+
+source_file="res://assets/Models/OBJ format/tree_pineTallC.obj"
+dest_files=["res://.godot/imported/tree_pineTallC.obj-fccfd9851ef473170b4c0e25962feae9.mesh", "res://.godot/imported/tree_pineTallC.obj-fccfd9851ef473170b4c0e25962feae9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

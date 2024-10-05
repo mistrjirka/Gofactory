@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cmx6xos0tdfdb"
+path="res://.godot/imported/ground_pathBend.obj-3852dd249fdd50e5e2ee7b71a4f8c5ba.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ground_pathBend.obj-3852dd249fdd50e5e2ee7b71a4f8c5ba.mesh"]
+
+source_file="res://assets/Models/OBJ format/ground_pathBend.obj"
+dest_files=["res://.godot/imported/ground_pathBend.obj-3852dd249fdd50e5e2ee7b71a4f8c5ba.mesh", "res://.godot/imported/ground_pathBend.obj-3852dd249fdd50e5e2ee7b71a4f8c5ba.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
